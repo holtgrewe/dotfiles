@@ -83,9 +83,17 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" lean and mean but nice startus bar
 Plugin 'vim-airline/vim-airline'
+" git plugin
 Plugin 'tpope/vim-fugitive'
+" solarized color scheme
 Plugin 'altercation/vim-colors-solarized'
+" full path fuzzy finder
+Plugin 'ctrlpvim/ctrlp.vim'
+" better file explorer
+Plugin 'scrooloose/nerdtree'
+" TODO: add tagbar for Python
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
