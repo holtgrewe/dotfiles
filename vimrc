@@ -95,6 +95,11 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 " TODO: add tagbar for Python
 
+" nice and lean PEP8-style indentation for Python
+Plugin 'hynek/vim-python-pep8-indent'
+" nice and lean folding for Python
+Plugin 'tmhedberg/SimpylFold'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
