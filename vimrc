@@ -100,6 +100,10 @@ Plugin 'hynek/vim-python-pep8-indent'
 " nice and lean folding for Python
 Plugin 'tmhedberg/SimpylFold'
 
+" React.js
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -118,7 +122,7 @@ filetype plugin indent on    " required
 
 " setup vim-airline {
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 set laststatus=2
 " }
 
