@@ -1,0 +1,47 @@
+# ---------------------------------------------------------------------------
+# Mailing Lists etc.
+
+alias hpc-cluster \"BIH Cluster List\" <bih-cluster@charite.de>
+
+# ---------------------------------------------------------------------------
+# MDC Contacts
+
+alias christian.hinze \"Hinze, Christian\" <Christian.Hinze@mdc-berlin.de>
+alias Alf.Wachsmann \"Alf.Wachsmann@mdc-berlin.de\" <Alf.Wachsmann@mdc-berlin.de>
+alias Sascha.Sauer \"Sascha.Sauer@mdc-berlin.de\" <Sascha.Sauer@mdc-berlin.de>
+alias Daniele.Franze \"Daniele.Franze@mdc-berlin.de\" <Daniele.Franze@mdc-berlin.de>
+alias martin.siegert \"martin.siegert@mdc-berlin.de\" <martin.siegert@mdc-berlin.de>
+
+# ---------------------------------------------------------------------------
+# Charite Contacts
+
+alias nadja.ehmke \"Ehmke, Nadja\" <nadja.ehmke@charite.de>
+alias Stefan.Mundlos \"Mundlos, Stefan\" <Stefan.Mundlos@charite.de>
+alias sebastian.koehler Sebastian Koehler <sebastian.koehler@charite.de>
+alias lina.burbat \"Burbat, Lina\" <lina.burbat@charite.de>
+alias nils.bluethgen \"Blüthgen, Nils\" <nils.bluethgen@charite.de>
+alias marie.coutelier \"Coutelier, Marie\" <marie.coutelier@charite.de>
+
+# ---------------------------------------------------------------------------
+# BIHealth Contacts
+
+alias dieter.beule \"Beule, Dieter\" <Dieter.Beule@bihealth.de>
+alias max.schubach \"Schubach, Max\" <max.schubach@bihealth.de>
+alias clemens.messerschmidt \"Messerschmidt, Clemens\" <clemens.messerschmidt@bihealth.de>
+alias verena.pritzl \"Pritzl, Verena\" <verena.pritzl@bihealth.de>
+alias sebastian.roskosch \"Roskosch, Sebastian\" <sebastian.roskosch@bihealth.de>
+alias martin.kircher \"Kircher, Martin\" <martin.kircher@bihealth.de>
+alias uhlitz Florian Uhlitz <uhlitz@hu-berlin.de>
+
+# ---------------------------------------------------------------------------
+# Other Contacts
+
+alias sven.nahnsen Sven Nahnsen <sven.nahnsen@uni-tuebingen.de>
+alias Knut.Reinert \"Reinert, Knut\" <Knut.Reinert@fu-berlin.de>
+
+# ---------------------------------------------------------------------------
+# Unsorted Contacts
+
+alias Rosa.Schmuck \"Schmuck, Rosa\" <Rosa.Schmuck@charite.de>
+alias eric.blanc \"Blanc, Eric\" <eric.blanc@bihealth.de>
+alias franz.marko \"Marko, Franz\" <franz.marko@bihealth.de>

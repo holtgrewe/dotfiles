@@ -1,0 +1,109 @@
+# folder-hook "charite.de" 'source ~/.mutt/account.charite'
+#default
+# source "~/.mutt/account.charite"
+# === account.charite ===
+set from = "Manuel Holtgrewe <manuel.holtgrewe@bihealth.de>"
+#set folder = imaps://email.charite.de/
+#set imap_user ="holtgrem"
+set folder ="~/.mail_imap_offline/charite/"
+set spoolfile = "=INBOX"
+set postponed = "=Drafts"
+set record = "=INBOX"
+set smtp_url ="smtp://postamt.charite.de"
+set envelope_from_address = "manuel.holtgrewe@bihealth.de"
+set ssl_force_tls = no
+
+# Enable status line emulation
+set ts_enabled = yes
+set ts_status_format = "Mutt %?m?%m messages&no messages?%?n? [%n NEW]?"
+
+# source "~/.mutt/color.index.default"
+# === color.index.default ===
+uncolor index '*'
+color index default default ~A
+color index brightcyan default ~N
+color index brightyellow default ~F
+color index brightgreen default ~T
+color index blue default ~D
+color index yellow black ~v
+color index brightcyan default "~v~(~N)"
+color index brightyellow default "~v~(~F)"
+
+# vim: set filetype=muttrc :
+# === color.index.default ===
+
+color index color198 color0 '~h "^Importance: high"'
+color index color33 color0 '~h "^Importance: low"'
+
+macro index,pager A "<save-message>=Archive <enter>" "Archive message"
+macro index,pager,generic ,a '<Esc>t<tag-prefix-cond><save-message>=Archive <enter>' "Archive thread"
+folder-hook . 'macro index,pager d "<save-message>=Deleted <enter>"'
+folder-hook "=Deleted " 'macro index,pager d <delete-message>'
+
+# vim: set filetype=muttrc :
+# === account.charite ===
+
+set ssl_force_tls = yes
+set sort = threads
+set header_cache = "~/.muttcache/headercache"
+set message_cachedir = "~/.muttcache/messagecache"
+set imap_check_subscribed
+set imap_keepalive = 300 # timeout fuer non-interactive-action: z.B.: e-Mail schreiben
+set mail_check = 2 # poll-Intervall andere Mailboxen
+set timeout = 2
+set ssl_starttls = yes
+set use_envelope_from = no
+
+set help =no
+set noconfirmappend
+set realname ="Manuel Holtgrewe"
+set edit_hdrs
+set strict_threads
+#set editor="vim \"+set ft=mail\" \"+set textwidth=72\" \"+set spell\" \"+set spelllang=de,en\""
+set mailcap_path ="~/.mutt/mailcap"
+set pager_index_lines = 6
+set folder_format="%2C %4N    %f"
+set index_format="%4C|%2M%Z|%[%d.%m.%y %H:%M]| %-17.17L (%4c) %s"
+#set index_format="%4C|%2M%Z|%[%d.%m.%y %H:%M]| %-17.17L (%?l?%4l&%4c?) %s"
+set attach_format="%u%D%I %t%4n %T%.80d%> [%.7m/%.10M, %.6e%?C?, %C?, %s] "
+set imap_idle #nur zum Test
+set print_command = "muttprint"
+set quit=ask-yes
+set mark_old = no
+set delete
+set alias_file= ~/.mutt/aliases
+set signature = ~/.mutt/signature
+set crypt_use_gpgme=yes
+
+set query_command = ~/.mutt/mutt-ldap.pl
+
+source $alias_file 
+
+my_hdr Importance: normal
+unhdr_order *
+hdr_order From: Subject: Date:
+ignore *
+unignore From: Date: To: Reply-To: Subject: Cc: Bcc: Importance:
+auto_view text/x-vcard text/html text/enriched
+alternative_order text/html text/plain
+
+##folder-hook . 'macro index,pager d "<save-message>=Trash<enter>"'
+##folder-hook =Trash 'macro index,pager d <delete-message>'
+
+color header yellow default "^subject:"
+
+color body brightgreen default "[-a-z_0-9.%$]+@[-a-z_0-9]+\.[-a-z][a-z]+"
+color body yellow default "[:;B8]-[)(/\\*|]"
+
+color quoted cyan default
+color quoted1 yellow default
+color quoted2 red default
+color quoted3 green default
+color quoted4 cyan default
+color quoted5 yellow default
+color quoted6 red default
+color quoted7 green default
+
+macro index,pager <f2> "<shell-escape>less /usr/share/doc/mutt/manual.txt.gz<enter>" "Show Mutt documentation"
+
+macro attach f '<pipe-entry>firefox "data:text/html;base64,$(base64 -w 0 <&0)"<enter>' "Display HTML attachment in firefox"

@@ -16,7 +16,13 @@ set nostartofline  " Leave my cursor where it was.
 " }
 
 " File/Backups {
-set nobackup  " make backup file
+set backup
+set writebackup
+set backupcopy=yes
+set bkc=yes
+
+au BufEnter *.js setl backupcopy=yes
+au BufEnter *.jsx setl backupcopy=yes
 " }
 
 " Visual Cues {
