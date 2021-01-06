@@ -31,5 +31,6 @@ stow $overwrite bash
 stow $overwrite mutt
 stow $overwrite vim
 stow $overwrite keychain
+stow $overwrite git
 
 >&2 echo "All done. Have a nice day!"
