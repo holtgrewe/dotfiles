@@ -1,2 +1,0 @@
-text/html; lynx -dump -width=78 -nolist %s | sed 's/^   //'; copiousoutput; needsterminal; nametemplate=%s.html
-application/pdf; $HOME/.mutt/mutt_bgrun /usr/bin/mupdf '%s' ; test=test "$DISPLAY" != "" 

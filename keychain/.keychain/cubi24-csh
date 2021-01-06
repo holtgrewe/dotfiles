@@ -1,0 +1,2 @@
+setenv SSH_AUTH_SOCK /run/user/5005/keyring/ssh;
+setenv SSH_AGENT_PID 4682;

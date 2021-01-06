@@ -5,11 +5,11 @@
 set from = "Manuel Holtgrewe <manuel.holtgrewe@bihealth.de>"
 #set folder = imaps://email.charite.de/
 #set imap_user ="holtgrem"
-set folder ="~/.mail_imap_offline/charite/"
+set folder ="/vol/local/data/offlineimap/charite"
 set spoolfile = "=INBOX"
 set postponed = "=Drafts"
 set record = "=INBOX"
-set smtp_url ="smtp://postamt.charite.de"
+set smtp_url ="smtp://smtp-out.charite.de"
 set envelope_from_address = "manuel.holtgrewe@bihealth.de"
 set ssl_force_tls = no
 
@@ -35,7 +35,7 @@ color index brightyellow default "~v~(~F)"
 color index color198 color0 '~h "^Importance: high"'
 color index color33 color0 '~h "^Importance: low"'
 
-macro index,pager A "<save-message>=Archive <enter>" "Archive message"
+macro index,pager,generic A "<save-message>=Archive <enter>" "Archive message"
 macro index,pager,generic ,a '<Esc>t<tag-prefix-cond><save-message>=Archive <enter>' "Archive thread"
 folder-hook . 'macro index,pager d "<save-message>=Deleted <enter>"'
 folder-hook "=Deleted " 'macro index,pager d <delete-message>'

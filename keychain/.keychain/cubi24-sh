@@ -1,0 +1,2 @@
+SSH_AUTH_SOCK=/run/user/5005/keyring/ssh; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=4682; export SSH_AGENT_PID;

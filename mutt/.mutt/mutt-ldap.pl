@@ -18,11 +18,11 @@ use Encode qw/encode decode/;
 use vars qw { $ldapserver $domain $username $password $basedn };
 
 # --- configuration ---
-$ldapserver = "172.16.0.71";
-$domain = "CHARITE";
-$username = "svc-bih-cubi-cbio";
-$password = "wG7vuzWZMpdEkn";
-$basedn = "OU=Struktur,DC=charite,dc=de";
+$ldapserver = "SERVER";
+$domain = "DOMAIN";
+$username = "USER";
+$password = "PASSWORD";
+$basedn = "BASEDN";
 # --- end configuration ---
 
 #my $search=shift;

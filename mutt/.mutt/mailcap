@@ -1,0 +1,23 @@
+text/html; lynx -dump -width=78 -nolist %s | sed 's/^   //'; copiousoutput; needsterminal; nametemplate=%s.html
+application/pdf; $HOME/.mutt/mutt_bgrun /usr/bin/mupdf '%s' ; test=test "$DISPLAY" != "" 
+image/png; display '%s'
+
+application/x-msexcel; $HOME/.mutt/mutt_bgrun /usr/bin/libreoffice %s
+application/ms-exc; $HOME/.mutt/mutt_bgrun /usr/bin/libreoffice %s
+application/excel; $HOME/.mutt/mutt_bgrun /usr/bin/libreoffice %s
+application/msexcel; $HOME/.mutt/mutt_bgrun /usr/bin/libreoffice %s
+application/vnd.ms-exc; $HOME/.mutt/mutt_bgrun /usr/bin/libreoffice %s
+application/vnd.ms-excel; $HOME/.mutt/mutt_bgrun /usr/bin/libreoffice %s
+application/x-msexcel; $HOME/.mutt/mutt_bgrun /usr/bin/libreoffice %s
+application/ms-exc; $HOME/.mutt/mutt_bgrun /usr/bin/libreoffice %s
+application/excel; $HOME/.mutt/mutt_bgrun /usr/bin/libreoffice %s
+application/msexcel; $HOME/.mutt/mutt_bgrun /usr/bin/libreoffice %s
+application/vnd.ms-exc; $HOME/.mutt/mutt_bgrun /usr/bin/libreoffice %s
+application/vnd.ms-excel; $HOME/.mutt/mutt_bgrun /usr/bin/libreoffice %s
+application/msword; $HOME/.mutt/mutt_bgrun /usr/bin/libreoffice %s
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; $HOME/.mutt/mutt_bgrun /usr/bin/libreoffice %s
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; $HOME/.mutt/mutt_bgrun /usr/bin/libreoffice %s
+application/odt; libreoffice %s
+application/ods; libreoffice %s
+application/msword; libreoffice %s
+application/vnd.oasis.opendocument.text; libreoffice %s
