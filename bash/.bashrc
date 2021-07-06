@@ -238,15 +238,13 @@ cook-cookie()
 
 export -f cook-cookie
 
-export CARGO_HOME=/vol/local/programs/cargo
-export RUSTUP_HOME=/vol/local/programs/rustup
-export PATH=$PATH:/vol/local/programs/cargo/bin/
+#export CARGO_HOME=/vol/local/programs/cargo
+#export RUSTUP_HOME=/vol/local/programs/rustup
+#export PATH=$PATH:/vol/local/programs/cargo/bin/
 
 export SENTRY_AUTH_TOKEN=691778fbaf4643988fc63f90eb3a18a00b7871b6687e41269ff39a61ab6f0710
 
 #export SODAR_AUTH_TOKEN=y4jgbnszveu930jf7x9qhf7uc3w7fafz
-
-export R_LIBS_USER=/vol/local/R
 
 alias molecule=~/.local/bin/molecule
 
@@ -265,3 +263,18 @@ source $HOME/.keychain/$HOSTNAME-sh
 export PATH=$PATH:$HOME/.local/bin
 export GOPATH=${HOME}/go
 export PATH=/usr/local/go/bin:${PATH}:${GOPATH}/bin
+
+alias miniconda3="source /opt/miniconda3/bin/activate"
+
+alias run-irods="docker run -p 1247:1247 -p 20000-20019:20000-20019 -p 5432:5432 --detach --name irods mjstealey/irods-provider-postgres:4.2.4"
+
+alias mount-cluster="sshfs transfer-2.research.hpc.bihealth.org:/ /data/sshfs"
+
+export PATH=$PATH:/usr/local/go/bin
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+
+alias onedrive-pull="rclone sync -i -P charite: $HOME/Documents/Charite_OneDrive"
+alias onedrive-push="rclone sync -i -P $HOME/Documents/Charite_OneDrive charite:"
+alias onedrive-check="rclone check charite: $HOME/Documents/Charite_OneDrive"
+source "$HOME/.cargo/env"

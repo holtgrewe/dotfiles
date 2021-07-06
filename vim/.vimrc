@@ -52,10 +52,6 @@ set expandtab  " we do not want to type tabs
 let mapleader = ","  " XXX What is this for?
 " }
 
-" Color Schema {
-:color elflord
-" }
-
 " Disable font antialiasing in MacVim {
 if has("gui_macvim")
   "set noantialias
@@ -128,14 +124,14 @@ filetype plugin indent on    " required
 
 " setup vim-airline {
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 0
+let g:airline_powerline_fonts = 1
 set laststatus=2
 " }
 
 " setup vim-colors-solarized {
-set term=screen-256color-bce
-let g:solarized_termcolors=256
-set t_Co=256
+"set term=screen-256color-bce
+"let g:solarized_termcolors=256
+"set t_Co=256
 syntax enable
 set background=dark
 colorscheme solarized
