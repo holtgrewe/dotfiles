@@ -278,3 +278,5 @@ alias onedrive-pull="rclone sync -i -P charite: $HOME/Documents/Charite_OneDrive
 alias onedrive-push="rclone sync -i -P $HOME/Documents/Charite_OneDrive charite:"
 alias onedrive-check="rclone check charite: $HOME/Documents/Charite_OneDrive"
 source "$HOME/.cargo/env"
+
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64

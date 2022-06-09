@@ -90,7 +90,7 @@ Plugin 'vim-airline/vim-airline'
 " git plugin
 Plugin 'tpope/vim-fugitive'
 " solarized color scheme
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
 " full path fuzzy finder
 Plugin 'ctrlpvim/ctrlp.vim'
 " better file explorer
@@ -134,5 +134,5 @@ set laststatus=2
 "set t_Co=256
 syntax enable
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 " }
