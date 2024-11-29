@@ -1,0 +1,2 @@
+setenv SSH_AUTH_SOCK /tmp/ssh-uiSz7OJ2qwti/agent.346;
+setenv SSH_AGENT_PID 347;

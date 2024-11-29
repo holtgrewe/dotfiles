@@ -19,7 +19,8 @@ GNU Stow
 ## Installation
 
 ```bash
-~ $ git clone git@github.com:holtgrewe/dotfiles.git .dotfiles
+~ $ git clone --recursive git@github.com:holtgrewe/dotfiles.git .dotfiles
 ~ $ cd .dotfiles
 .dotfiles $ 
+~ $ bash install.sh
 ```
